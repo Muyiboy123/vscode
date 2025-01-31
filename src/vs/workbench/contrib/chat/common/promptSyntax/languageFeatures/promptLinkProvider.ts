@@ -130,6 +130,6 @@ export class PromptLinkProvider extends Disposable implements LinkProvider {
 	}
 }
 
-// register the text model prompt decorators provider as a workbench contribution
+// register the provider as a workbench contribution
 Registry.as<IWorkbenchContributionsRegistry>(WorkbenchExtensions.Workbench)
 	.registerWorkbenchContribution(PromptLinkProvider, LifecyclePhase.Eventually);
